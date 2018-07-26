@@ -286,6 +286,12 @@
 		            ],
 		            "value": "1:1",
 					"scope": [ "albums", "sets", "set" ]
+		        },
+		        "use_lightgallery": {
+		        	"label": "Use Lightgallery",
+		        	"type": "boolean",
+		        	"value": true,
+		        	"scope": [ "album" ]
 		        }
 			}
 		},
