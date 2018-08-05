@@ -321,7 +321,13 @@ header.main {
   font-size: [$header_font_size]px;
   height: [$header_height]px;
   line-height: [$header_height]px;
-  overflow: auto
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: $header_bg_color;
+  color: $header_text_color
 }
 
 footer.main {
@@ -414,7 +420,8 @@ footer.main span.copyright {
 
 div#container {
   position: relative;
-  padding-top: [$grid_col_offset]px
+  padding-top: [$grid_col_offset]px;
+  margin-top: [$header_height]px;
 }
 
 div#grid {
@@ -879,6 +886,10 @@ div#kdiscuss {
   line-height: 0;
   color: $body_color;
   text-decoration: none
+}
+
+body.k-lens-splash div#container {
+  margin-top: 0;
 }
 
 body.k-lens-splash header.main {
