@@ -591,7 +591,7 @@ a.img-hover p {
   margin-bottom: 0
 }
 
-a.img-hover span.overlay {
+a.img-hover div.overlay {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -605,11 +605,17 @@ a.img-hover span.overlay {
   width: 100%;
   height: 100%;
   padding: 15px;
+  padding-top: 40%;
   text-align: left;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
-a.img-hover:hover span.overlay {
+a.img-hover div.overlay h2 {
+  color: rgba(255,255,255,0.8);
+  font-size: 24px;
+}
+
+a.img-hover:hover div.overlay {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1
